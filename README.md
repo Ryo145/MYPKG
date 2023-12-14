@@ -3,7 +3,8 @@
 
 
 # 必要なソフトウェア
-* ROS2
+* ROS2  
+* Python
  
 # テスト環境
 * Ubuntu 22.04.2 LTS
