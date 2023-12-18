@@ -5,15 +5,11 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Int16
 
-class Listener():
-    def __init__(self, node):
-        self.sub = node.create_subscription(Int16, "countup", self.cb, 10)
-
-    def cb(self, msg):
-        node.get_logger().info("Listen: %d" % msg.data)
+def cb(msg):
+    global node
+    node.get_logger().info("Listen: %d" % msg.data)
 
 rclpy.init()
 node = Node("listener")
-listener = Listener(node)
+pub = node.create_subscription(Int16, "countup", cb, 10)
 rclpy.spin(node)
-
