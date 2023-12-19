@@ -3,17 +3,23 @@
 
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Int16
+from std_msgs.msg import Float64
 
 class Listen2():
     def __init__(self, node):
-        self.sub = node.create_subscription(Int16, "countup", self.cb, 10)
+        self.sub = node.create_subscription(Float64, "countup1", self.cb, 10)
+        self.pub = node.create_publisher(Float64, "countup2", 10)
+        self.total = 0.0
 
     def cb(self, msg):
         global node
-        node.get_logger().info("Listen2: %d" % (msg.data * 2))
+        self.total -= msg.data
+        node.get_logger().info("Listen2: %f" % self.total)
+        self.pub.publish(Float64(data=self.total))
 
 rclpy.init()
 node = Node("Listen2")
 Listen2 = Listen2(node)
 rclpy.spin(node)
+
+

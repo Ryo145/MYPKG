@@ -29,6 +29,7 @@ setup(
             'listener1 = mypkg.listener1:main',
             'listener2 = mypkg.listener2:main',
             'listener3 = mypkg.listener3:main',
+            'listener4 = mypkg.listener4:main',
         ],
     },
 )

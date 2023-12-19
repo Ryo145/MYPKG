@@ -3,16 +3,22 @@
 
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Int16
+from std_msgs.msg import Float64
+import random
 
 class Listen3():
     def __init__(self, node):
-        self.sub = node.create_subscription(Int16, "countup", self.cb, 10)
+        self.sub = node.create_subscription(Float64, "countup2", self.cb, 10)
+        self.pub = node.create_publisher(Float64, "countup3", 10)
+        self.total = 1.0
 
     def cb(self, msg):
         global node
-        if msg.data % 2 == 0:
-            node.get_logger().info("Listen3: %d" % (msg.data))
+        if msg.data == 0:
+            msg.data = float(random.randint(10, 100))
+        self.total *= msg.data
+        node.get_logger().info("Listen3: %f" % self.total)
+        self.pub.publish(Float64(data=self.total))
 
 rclpy.init()
 node = Node("Listen3")

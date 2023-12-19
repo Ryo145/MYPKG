@@ -3,17 +3,22 @@
 
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Int16
+from std_msgs.msg import Float64
 
-def is_even(n):
-    return n % 2 == 0
+class Listen1():
+    def __init__(self, node):
+        self.sub = node.create_subscription(Float64, "countup", self.cb, 10)
+        self.pub = node.create_publisher(Float64, "countup1", 10)
+        self.total = 0.0
 
-def cb(msg):
-    global node
-    if is_even(msg.data):
-        node.get_logger().info("Listen: %d" % msg.data)
+    def cb(self, msg):
+        global node
+        self.total += msg.data
+        node.get_logger().info("Listen1: %f" % self.total)
+        self.pub.publish(Float64(data=self.total))
 
 rclpy.init()
-node = Node("listener")
-pub = node.create_subscription(Int16, "countup", cb, 10)
+node = Node("Listen1")
+Listen1 = Listen1(node)
 rclpy.spin(node)
+

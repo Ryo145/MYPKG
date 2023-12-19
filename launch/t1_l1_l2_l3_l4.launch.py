@@ -28,6 +28,10 @@ def generate_launch_description():
             executable='listener3',
             output='screen'
             )
+    listener4 = launch_ros.actions.Node(
+            package='mypkg',
+            executable='listener4',
+            output='screen'
+            )
 
-    return launch.LaunchDescription([talker1, listener1, listener2, listener3])
-
+    return launch.LaunchDescription([talker1, listener1, listener2, listener3, listener4])
