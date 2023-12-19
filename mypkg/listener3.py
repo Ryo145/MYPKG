@@ -17,6 +17,8 @@ class Listen3():
         if msg.data == 0:
             msg.data = float(random.randint(10, 100))
         self.total *= msg.data
+        if self.total >= 999999999999999.999999:
+            self.total = 1.0
         node.get_logger().info("Listen3: %f" % self.total)
         self.pub.publish(Float64(data=self.total))
 

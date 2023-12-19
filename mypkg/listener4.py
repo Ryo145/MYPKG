@@ -17,9 +17,10 @@ class Listen4():
         global node
         if msg.data == 0:
             msg.data = float(random.randint(10, 100))
-        if self.total <= 1:
-            self.total = 1000
-        self.total = self.prev / msg.data
+        if msg.data != 0:
+            self.total = float(self.prev / msg.data)
+        if self.total == -0.000000:
+            self.total = 100000.0
         self.prev = msg.data
         node.get_logger().info("Listen4: %f" % self.total)
         self.pub.publish(Float64(data=self.total))
@@ -28,4 +29,5 @@ rclpy.init()
 node = Node("Listen4")
 Listen4 = Listen4(node)
 rclpy.spin(node)
+
 
