@@ -9,4 +9,4 @@ source $dir/.bashrc
 timeout 10 ros2 launch mypkg talk1_listen1_listen2.launch.py > /tmp/mypkg.log
 
 cat /tmp/mypkg.log |
-grep 'Listen: 10'
+grep 'Listen: 10.000000'
