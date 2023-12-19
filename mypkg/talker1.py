@@ -13,7 +13,7 @@ class Talker():
 
     def cb(self):
         msg = Int16()
-        msg.data = self.n
+        msg.data = self.n * 2  # メッセージの値を2倍に
         self.pub.publish(msg)
         self.n += 1
 
@@ -25,3 +25,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
