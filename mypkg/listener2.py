@@ -22,4 +22,3 @@ node = Node("Listen2")
 Listen2 = Listen2(node)
 rclpy.spin(node)
 
-

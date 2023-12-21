@@ -5,7 +5,7 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Float64
 
-class Talker():
+class Talker1():
     def __init__(self, node):
         self.pub = node.create_publisher(Float64, "countup", 10)
         self.n = 0.0
@@ -19,8 +19,8 @@ class Talker():
 
 def main():
     rclpy.init()
-    node = Node("talker")
-    talker = Talker(node)
+    node = Node("talker1")
+    talker1 = Talker1(node)
     rclpy.spin(node)
 
 if __name__ == '__main__':
