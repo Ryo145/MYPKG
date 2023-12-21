@@ -15,7 +15,7 @@ class Listen1():
         global node
         self.total += msg.data
         node.get_logger().info("Listen1: %f" % self.total)
-        self.pub.publish(Float64(data=self.total))
+        self.pub.publish(Float64(data = self.total))
 
 rclpy.init()
 node = Node("Listen1")

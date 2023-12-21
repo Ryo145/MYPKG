@@ -23,7 +23,7 @@ class Listen4():
             self.total = 100000.0
         self.prev = msg.data
         node.get_logger().info("Listen4: %f" % self.total)
-        self.pub.publish(Float64(data=self.total))
+        self.pub.publish(Float64(data = self.total))
 
 rclpy.init()
 node = Node("Listen4")

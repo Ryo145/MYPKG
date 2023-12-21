@@ -20,7 +20,7 @@ class Listen3():
         if self.total >= 999999999999999.999999:
             self.total = 1.0
         node.get_logger().info("Listen3: %f" % self.total)
-        self.pub.publish(Float64(data=self.total))
+        self.pub.publish(Float64(data = self.total))
 
 rclpy.init()
 node = Node("Listen3")
