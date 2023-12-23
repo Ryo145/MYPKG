@@ -1,5 +1,6 @@
 # mypkg
 このリポジトリは千葉工業大学先進工学部未来ロボティクス学科４sのロボットシステム学の講義で使用したものである。  
+[![test](https://github.com/Ryo145/mypkg/actions/workflows/test1.yml/badge.svg)](https://github.com/Ryo145/mypkg/actions/workflows/test1.yml)
 
 # インストール方法
 ROS2を使用できる環境でこのリポジトリをクローンして使用する。  
@@ -9,34 +10,45 @@ ROS2を使用できる環境でこのリポジトリをクローンして使用�
 $ git clone https://github.com/Ryo145/mypkg.git
 ```
 
-# 機能
 # ノード
 ## 1. talker1
+   * 機能
+
    * 実行方法
    
    * 実行結果
 
 ## 2. listener1
+   * 機能
+
    * 実行方法
 
    * 実行結果
 
 ## 3. listener2
+   * 機能
+
    * 実行方法
 
    * 実行結果
 
 ## 4. listener3
+   * 機能
+
    * 実行方法
 
    * 実行結果
 
 ## 5. listener4
+   * 機能
+
    * 実行方法
 
    * 実行結果
 　
 # ローンチ
+   * 機能
+
    * 実行方法
 
    * 実行結果
