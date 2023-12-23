@@ -118,13 +118,32 @@ $ git clone https://github.com/Ryo145/mypkg.git
    * 実行方法
    
    ```
-
+   $ ros2 launch mypkg t1_l1_l2_l3_l4.launch.py
    ```
 
    * 実行結果
    
    ```
-
+   $ ros2 launch mypkg t1_l1_l2_l3_l4.launch.py
+   [INFO] [launch]: All log files can be found below /home/bellsryo/.ros/log/2023-12-23-14-27-41-269560-localhost-1449
+   [INFO] [launch]: Default logging verbosity is set to INFO
+   [INFO] [talker1-1]: process started with pid [1450]
+   [INFO] [listener1-2]: process started with pid [1452]
+   [INFO] [listener2-3]: process started with pid [1454]
+   [INFO] [listener3-4]: process started with pid [1456]
+   [INFO] [listener4-5]: process started with pid [1458]
+   [listener1-2] [INFO] [1703309262.048109123] [Listen1]: Listen1: 0.000000
+   [listener2-3] [INFO] [1703309262.054266616] [Listen2]: Listen2: 0.000000
+   [listener3-4] [INFO] [1703309262.060234463] [Listen3]: Listen3: 71.000000
+   [listener4-5] [INFO] [1703309262.066367404] [Listen4]: Listen4: 100000.000000
+   [listener1-2] [INFO] [1703309262.540945024] [Listen1]: Listen1: 1.000000
+   [listener2-3] [INFO] [1703309262.541718865] [Listen2]: Listen2: -1.000000
+   [listener3-4] [INFO] [1703309262.542519136] [Listen3]: Listen3: -71.000000
+   [listener4-5] [INFO] [1703309262.543312364] [Listen4]: Listen4: -1.000000
+   [listener1-2] [INFO] [1703309263.042626815] [Listen1]: Listen1: 3.000000
+   [listener2-3] [INFO] [1703309263.044762601] [Listen2]: Listen2: -4.000000
+   [listener3-4] [INFO] [1703309263.046814648] [Listen3]: Listen3: 284.000000
+   [listener4-5] [INFO] [1703309263.048974997] [Listen4]: Listen4: -0.250000
    ```
 
 # 必要なソフトウェア
