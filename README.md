@@ -1,6 +1,7 @@
 # mypkg
-このリポジトリは千葉工業大学先進工学部未来ロボティクス学科４sのロボットシステム学の講義で使用したものである。  
 [![test](https://github.com/Ryo145/mypkg/actions/workflows/test1.yml/badge.svg)](https://github.com/Ryo145/mypkg/actions/workflows/test1.yml)
+
+このリポジトリは千葉工業大学先進工学部未来ロボティクス学科４sのロボットシス>テム学の講義で使用したものである。
 
 # インストール方法
 ROS2を使用できる環境でこのリポジトリをクローンして使用する。  
