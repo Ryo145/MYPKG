@@ -113,8 +113,7 @@ $ git clone https://github.com/Ryo145/mypkg.git
    ```
 　
 # ローンチ
-   * 機能
-
+   talker1,listener1,listener2,listener3,listener4を同時に実行することができる。
    * 実行方法
    
    ```
