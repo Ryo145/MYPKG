@@ -1,7 +1,9 @@
 # mypkg
 [![test](https://github.com/Ryo145/mypkg/actions/workflows/test1.yml/badge.svg)](https://github.com/Ryo145/mypkg/actions/workflows/test1.yml)
 
-このリポジトリは千葉工業大学先進工学部未来ロボティクス学科4sのロボットシステム学の講義で使用したものである。
+このリポジトリは千葉工業大学先進工学部未来ロボティクス学科4sのロボットシステム学の講義で使用したものである。  
+
+このリポジトリはROS2のパッケージです。
 
 # インストール方法
 ROS2を使用できる環境でこのリポジトリをクローンして使用する。  
@@ -12,6 +14,7 @@ $ git clone https://github.com/Ryo145/mypkg.git
 ```
 
 # ノード
+以下のノードをすべて実行するにはターミナルが５つ必要です。
 ## 1. talker1
    * 機能  
    数字をカウントして、トピック/countupを通じてメッセージを送信するパブリッシャを持つノードです。
@@ -113,7 +116,7 @@ $ git clone https://github.com/Ryo145/mypkg.git
    ```
 　
 # ローンチ
-   talker1,listener1,listener2,listener3,listener4を同時に実行することができる。
+   上記の五つのノードを同時に実行することができます。
    * 実行方法
    
    ```
