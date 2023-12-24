@@ -9,7 +9,6 @@ import random
 class Listen4():
     def __init__(self, node):
         self.sub = node.create_subscription(Float64, "countup3", self.cb, 10)
-        self.pub = node.create_publisher(Float64, "countup4", 10)
         self.total = 0.0
         self.prev = 0.0
 
@@ -23,10 +22,10 @@ class Listen4():
             self.total = 100000.0
         self.prev = msg.data
         node.get_logger().info("Listen4: %f" % self.total)
-        self.pub.publish(Float64(data = self.total))
 
 rclpy.init()
 node = Node("Listen4")
 Listen4 = Listen4(node)
 rclpy.spin(node)
+
 
