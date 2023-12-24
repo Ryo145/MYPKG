@@ -14,7 +14,7 @@ $ git clone https://github.com/Ryo145/mypkg.git
 # ノード
 ## 1. talker1
    * 機能  
-   数字をカウントして、トピック/countupを通じてメッセージを送信するパブリッシャを持つノードです
+   数字をカウントして、トピック/countupを通じてメッセージを送信するパブリッシャを持つノードです。
    * 実行方法
    
    ```
@@ -29,8 +29,8 @@ $ git clone https://github.com/Ryo145/mypkg.git
    ```
 
 ## 2. listener1
-   * 機能
-
+   * 機能  
+   /countupからメッセージを受け取り、それを累計して、その合計を/countup1を通じてメッセージを送信するパブリッシャを持つノードです。
    * 実行方法
 
    ```
@@ -51,7 +51,7 @@ $ git clone https://github.com/Ryo145/mypkg.git
 
 ## 3. listener2
    * 機能
-
+   /countup1からメッセージを受け取り、それを累計から減算してその結果を/countup2を通じてメッセージを送信するパブリッシャを持つノードです。
    * 実行方法
 
    ```
@@ -71,8 +71,8 @@ $ git clone https://github.com/Ryo145/mypkg.git
    ```
 
 ## 4. listener3
-   * 機能
-
+   * 機能  
+   /countup2からメッセージを受け取り、それを累計にかけ合わせその結果を/countup3を通じてメッセージを送信するパブリッシャを持つノードです。
    * 実行方法
 
    ```
@@ -92,8 +92,8 @@ $ git clone https://github.com/Ryo145/mypkg.git
    ```
 
 ## 5. listener4
-   * 機能
-
+   * 機能  
+   /countup3からメッセージを受け取り、それを前回の値で割った値で計算しその結果を表示するサブスクライバを持つノードです。
    * 実行方法
 
    ```
