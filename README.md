@@ -13,7 +13,7 @@ $ git clone https://github.com/Ryo145/mypkg.git
 
 # ノード
 ## 1. talker1
-   * 機能
+   * 機能  
    数字をカウントして、トピック/countupを通じてメッセージを送信するパブリッシャを持つノードです
    * 実行方法
    
