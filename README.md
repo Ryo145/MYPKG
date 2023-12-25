@@ -53,7 +53,7 @@ $ git clone https://github.com/Ryo145/mypkg.git
    ```
 
 ## 3. listener2
-   * 機能
+   * 機能  
    /countup1からメッセージを受け取り、それを累計から減算してその結果を/countup2を通じてメッセージを送信するパブリッシャを持つノードです。
    * 実行方法
 
