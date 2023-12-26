@@ -26,4 +26,3 @@ rclpy.init()
 node = Node("Listen3")
 Listen3 = Listen3(node)
 rclpy.spin(node)
-
