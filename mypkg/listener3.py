@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2023 Ryosuke Suzuki ryo135791113@gmail.com
+# SPDX-FileCopyrightText: 2023 Ryosuke Suzuki ryo135791113@gmail.com  
 # SPDX-License-Identifier: BSD-3-Clause
 
 import rclpy
