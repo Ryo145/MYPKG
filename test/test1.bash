@@ -8,7 +8,8 @@ dir=~
 cd $dir/ros2_ws
 colcon build
 source $dir/.bashrc
-timeout 10 ros2 launch mypkg t1_l1_l2_l3_l4.launch.py > /tmp/mypkg.log
+
+timeout 5 ros2 launch mypkg t1_l1_l2_l3_l4.launch.py > /tmp/mypkg.log
 
 cat /tmp/mypkg.log |
-grep 'Listen1: 0.000000'
+grep -e 'Listen1: 0.000000' -e 'Listen2: 0.000000' -e 'Listen4: 100000.000000' 
