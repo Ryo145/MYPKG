@@ -15,20 +15,21 @@ $ git clone https://github.com/Ryo145/mypkg.git
 
 # ノード
 
-以下のノードをすべて実行するにはターミナルが５つ必要です。
+以下のノードをすべて実行するにはターミナルが５つ必要です。  
+メッセージの型はFloat64。
 
 ## トピックの説明
 
-   * トピック1  
+### /countup  
    トピック/countupは、0.5秒ごとに１から1ずつ増やしていく。
    
-   * トピック2  
+### /addition  
    トピック/additionは、受け取った数値を累計に加算していく。
 
-   * トピック3  
+### /subtraction  
    トピック/subtractionは、受け取った数値を累計に減算していく。
 
-   * トピック4  
+### /multiplication
    トピック/multiplicationは、受け取った値を類型に乗算していく。
    
 ## 1. talker1
