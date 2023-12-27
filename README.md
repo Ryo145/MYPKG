@@ -23,13 +23,13 @@ $ git clone https://github.com/Ryo145/mypkg.git
    トピック/countupは、0.5秒ごとに１から1ずつ増やしていく。
    
    * トピック2  
-   トピック/additionは、受け取った数値を加算していく。
+   トピック/additionは、受け取った数値を累計に加算していく。
 
    * トピック3  
-   トピック/subtractionは、受け取った数値を減算していく。
+   トピック/subtractionは、受け取った数値を累計に減算していく。
 
    * トピック4  
-   トピック/multiplicationは、受け取った値を乗算していく。
+   トピック/multiplicationは、受け取った値を類型に乗算していく。
    
 ## 1. talker1
    * 機能  
