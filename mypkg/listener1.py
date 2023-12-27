@@ -8,7 +8,7 @@ from std_msgs.msg import Float64
 class Listen1():
     def __init__(self, node):
         self.sub = node.create_subscription(Float64, "countup", self.cb, 10)
-        self.pub = node.create_publisher(Float64, "countup1", 10)
+        self.pub = node.create_publisher(Float64, "addition", 10)
         self.total = 0.0
 
     def cb(self, msg):

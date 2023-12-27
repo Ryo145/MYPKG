@@ -8,7 +8,7 @@ import random
 
 class Listen4():
     def __init__(self, node):
-        self.sub = node.create_subscription(Float64, "countup3", self.cb, 10)
+        self.sub = node.create_subscription(Float64, "multiplication", self.cb, 10)
         self.total = 0.0
         self.prev = 0.0
 
