@@ -27,10 +27,10 @@ $ git clone https://github.com/Ryo145/mypkg.git
    トピック/additionは、受け取った数値を累計に加算していく。
 
 ### /subtraction  
-   トピック/subtractionは、受け取った数値を累計に減算していく。
+   トピック/subtractionは、受け取った数値を累計から減算していく。
 
 ### /multiplication
-   トピック/multiplicationは、受け取った値を類型に乗算していく。
+   トピック/multiplicationは、受け取った値を累計に乗算していく。
    
 ## 1. talker1
    * 機能  
