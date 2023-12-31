@@ -166,7 +166,7 @@ $ git clone https://github.com/Ryo145/mypkg.git
    ```
 
 # 必要なソフトウェア
-* ROS2  
+* ROS 2 humble  
 * Python
  
 # テスト環境
